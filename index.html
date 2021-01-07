@@ -43,16 +43,17 @@
 			});
 			$(function(){
 				$('#mv').bgSwitcher({
-					images: ['https://sawanori.github.io/wp-content/themes/eat_factory/img/top1.jpg',
-									 'https://sawanori.github.io/wp-content/themes/eat_factory/img/top2.jpg',
-									 'https://sawanori.github.io/wp-content/themes/eat_factory/img/top3.jpg',
-									 'https://sawanori.github.io/wp-content/themes/eat_factory/img/top4.jpg',
-									 'https://sawanori.github.io/wp-content/themes/eat_factory/img/top5.jpg',
-									 'https://sawanori.github.io/wp-content/themes/eat_factory/img/top6.jpg',
-									 'https://sawanori.github.io/wp-content/themes/eat_factory/img/top7.jpeg',
-									 'https://sawanori.github.io/wp-content/themes/eat_factory/img/top8.jpg',
-									 'https://sawanori.github.io/wp-content/themes/eat_factory/img/top9.jpg',
-									 'https://sawanori.github.io/wp-content/themes/eat_factory/img/top10.jpg'], // 切替背景画像を指定
+					images: ['https://raw.githubusercontent.com/sawanori/noolde_test/master/wp-content/themes/eat_factory/img/top1.jpg',
+				        	'https://raw.githubusercontent.com/sawanori/noolde_test/master/wp-content/themes/eat_factory/img/top2.jpg',
+									'https://raw.githubusercontent.com/sawanori/noolde_test/master/wp-content/themes/eat_factory/img/top3.jpg',
+									'https://raw.githubusercontent.com/sawanori/noolde_test/master/wp-content/themes/eat_factory/img/top4.jpg',
+									'https://raw.githubusercontent.com/sawanori/noolde_test/master/wp-content/themes/eat_factory/img/top5.jpg',
+									'https://raw.githubusercontent.com/sawanori/noolde_test/master/wp-content/themes/eat_factory/img/top6.jpg',
+									'https://raw.githubusercontent.com/sawanori/noolde_test/master/wp-content/themes/eat_factory/img/top7.jpg',
+									'https://raw.githubusercontent.com/sawanori/noolde_test/master/wp-content/themes/eat_factory/img/top8.jpg',
+									'https://raw.githubusercontent.com/sawanori/noolde_test/master/wp-content/themes/eat_factory/img/top9.jpg',
+									'https://raw.githubusercontent.com/sawanori/noolde_test/master/wp-content/themes/eat_factory/img/top10.jpg',
+								],
 					interval: 3000, // 背景画像を切り替える間隔を指定 3000=3秒
 					loop: true, // 切り替えを繰り返すか指定 true=繰り返す　false=繰り返さない
 					shuffle: false, // 背景画像の順番をシャッフルするか指定 true=する　false=しない
@@ -71,7 +72,7 @@
         if ( $(window).scrollTop() > px_change ) {
             $("header").addClass("navaction");
 
-        // 変化するポイント以前であればクラスを削
+        // 変化するポイント以前であればクラスを削除
         } else if ( $("header").hasClass("navaction") ) {
             $("header").removeClass("navaction");
         }
